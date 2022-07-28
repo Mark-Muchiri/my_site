@@ -105,7 +105,7 @@ def activate(request, uidb64, token):
     
 @login_required(login_url='login')
 def dashboard(request):
-     return render(request, 'accounts/dashboard.html', context=context)
+     return render(request, 'accounts/dashboard.html')
 
 def logout(request):
     return
