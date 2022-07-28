@@ -74,7 +74,40 @@
             <h3>Customer Reviews </h3>  
             
         </header>
-    
+
+        <form action="" moethods="POST">
+            {%csrf_token%}
+            <h5>Write your review</h5>
+            <div>
+                {% comment %} Rating stars {% endcomment %}
+                <label>How do you rate this product?</label>
+                <br>
+                <div class="rate">
+                    <input type="radio" name="rating" id="rating10" value="5" required/>  <label for="rating10" tittle="5"></label>
+                    <input type="radio" name="rating" id="rating9" value="4.5" required/> <label for="rating9" tittle="4.5" class="half"></label>
+                    <input type="radio" name="rating" id="rating8" value="4" required/>   <label for="rating8" tittle="4"></label>
+                    <input type="radio" name="rating" id="rating7" value="3.5" required/> <label for="rating7" tittle="3.5" class="half"></label>
+                    <input type="radio" name="rating" id="rating6" value="3" required/>   <label for="rating6" tittle="3" ></label>
+                    <input type="radio" name="rating" id="rating5" value="2.5" required/> <label for="rating5" tittle="2.5" class="half"></label>
+                    <input type="radio" name="rating" id="rating4" value="2" required/>   <label for="rating4" tittle="2"></label>
+                    <input type="radio" name="rating" id="rating3" value="1.5" required/> <label for="rating3" tittle="1.5" class="half"></label>
+                    <input type="radio" name="rating" id="rating2" value="1" required/>   <label for="rating2" tittle="1"></label>
+                    <input type="radio" name="rating" id="rating1" value="0.5" required/> <label for="rating1" tittle="0.5" class="half"></label>
+                </div>
+
+
+                Review Tittle:
+                <input type="text" class="form control" name="subject">
+                <br>
+                Review
+                <textarea name="review" rows="4" class="form-control"></textarea>
+                <br>
+                <input type="submit" value="Submit Review" class="btn btn-primary">
+                <br>
+            </div>
+
+        </form>
+        <br>
         <article class="box mb-3">
             <div class="icontext w-100">
                 <img src="./images/avatars/avatar1.jpg" class="img-xs icon rounded-circle">
