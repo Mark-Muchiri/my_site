@@ -1,13 +1,13 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Product, ReviewRating, ProductGallery
+from .models import Product, ReviewRating
 from category.models import Category
-from cart.views import _cart_id
-from cart.models import Cart, CartItem
+from carts.views import _cart_id
+from carts.models import Cart, CartItem
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.db.models import Q
 from .forms import ReviewForm
 from django.contrib import messages
-from orders.models import OrderProduct
+# from orders.models import OrderProduct
 from django.contrib.auth.decorators import login_required
 
 

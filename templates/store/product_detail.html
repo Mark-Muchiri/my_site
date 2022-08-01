@@ -94,9 +94,11 @@
                     <input type="radio" name="rating" id="rating2" value="1" required/>   <label for="rating2" tittle="1"></label>
                     <input type="radio" name="rating" id="rating1" value="0.5" required/> <label for="rating1" tittle="0.5" class="half"></label>
                 </div>
+                <br>
 
 
                 Review Tittle:
+                <br>
                 <input type="text" class="form control" name="subject">
                 <br>
                 Review
@@ -105,6 +107,7 @@
                 <input type="submit" value="Submit Review" class="btn btn-primary">
                 <br>
             </div>
+            {% comment %} {%include 'includes/alerts/alerts.html'%} {% endcomment %}
 
         </form>
         <br>
